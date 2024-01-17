@@ -20,7 +20,7 @@ presentable and functional website.
 
 During this project, I ran into styling difficulties, especially with the header images. 
 I originally used CSS "background-image" which inhibited my ability to adjust the images' 
-position. Upon reviewing course content, I alternatively used <img> tags in my HTML code and 
+position. Upon reviewing course content, I alternatively used img tags in my HTML code and 
 CSS "position" to rearrange image positions, providing greater flexibility and ease when I later
 implemented jQuery plugins. 
 

@@ -2,6 +2,8 @@ Red Dragon Realty:
 A webpage used to advertise real estate services offered by Red Dragon Realty 
 and provide contact information, built with HTML, CSS, and Java Script.
 
+Check out the website here: https://kristiiwuu.github.io/Red-Dragon-Realty/
+
 Project Status:
 This project was created solely for frontend purposes. Users can navigate 
 through different sections; interact with forms, links, and buttons; and read 

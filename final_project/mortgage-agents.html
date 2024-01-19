@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mortgage Agents</title>
+    <meta name="description" content="At Red Dragon Realty, we go beyond real estate - explore our comprehensive mortgage services. Secure your financial future with us by contacting our Mortgage Broker.">
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- top arrow -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <style>
+        #navbar a:hover, #navbar #highlight-mortgage-agents {
+            color: #C21818;
+            border-bottom: 2px solid #C21818;
+        }
+
+        #parallax-container {
+            height: 400px;
+            width: auto;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #parallax-container img {
+            width: auto;
+            height: 640px;
+            position: absolute;
+            left: 0px;
+            bottom: -140px;
+        }
+
+        #parallax-container .overlay {
+            height: 100px;
+            width: 300px;
+            background-color: white;
+            z-index: 1;
+            position: absolute;
+            top: 140px;
+            right: 75px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 3px 5px 10px #777;
+        }
+
+        #parallax-container .overlay h2 {
+            margin: 0px;
+            line-height: 50px;
+        }
+
+        #description {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+            height: 200px;
+        }
+
+        #description > h3 {
+            margin-top: 50px;
+        }
+
+        #mortgage-broker {
+            width: auto;
+            height: 420px;
+            background-color: #C21818;
+        }
+
+        #mortgage-broker #broker-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #broker-1 h3 {
+            margin: 5px 0px 0px;
+            color: white;
+        }
+
+        #broker-1 p {
+            margin: 1px;
+            color: white;
+        }
+
+        #broker-1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #broker-1 {
+            width: 400px;
+            height: auto;
+            background-color: #C21818;
+            padding: 15px;
+        }
+
+        #broker-1 .headshot {
+            width: 200px;
+            height: 250px;
+            border: 2px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #broker-1 img {
+            position: absolute;
+            width: 200px;
+        }
+
+        #broker-1 .email:hover a {
+            color: black;
+        }
+
+        #services {
+            height: auto;
+            width: auto;
+            padding: 50px 375px 100px;
+        }
+
+        #services h3 {
+            text-align: center;
+        }
+
+        #services li {
+            margin: 30px 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="img/logo.png" alt="Red Dragon Realty Logo">
+            <p>Red Dragon Realty</p>
+        </div>
+        <!-- #logo -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="agents.html">RE Agents</a>
+            <a href="listings.html">Listings</a>
+            <a href="mortgage-agents.html" id="highlight-mortgage-agents"> Mortgage Agents</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <!-- #navbar -->
+    </div>
+    <!-- #header -->
+    <div id="content">
+        <div id="parallax-container">
+            <img data-rellax-speed="-4" src="img/mortgage-header.jpg" alt="Keys">
+            <div class="overlay">
+                <h2>Red Dragon Financial</h2>
+                <h2>NMLS ID: 1306121</h2>
+            </div>
+            <!-- #overlay -->
+        </div> 
+        <!-- #parallax-container -->
+        
+        <div id="description">
+            <h3>Mortgage Services</h3>
+            <p>Need a loan for your home? Red Dragon Realty has you covered. In addition to buyer and seller services, 
+                we can cater to your mortgage needs, such as residential purchase and refinance.
+            </p>
+        </div>
+        <!-- #description -->
+        <div id="mortgage-broker">
+            <div id="broker-1">
+                <div class="headshot">
+                    <img src="img/rick-headshot.jpeg" alt="Headshot">
+                </div>
+                <h3>Rick Wu</h3>
+                <p>Mortgage Broker & Loan Officer</p>
+                <p>NMLS ID: 1224496</p>
+                <p>(626) 616-8428</p>
+                <p class="email"><a href="mailto:reddragonfinancial@yahoo.com">reddragonfinancial@yahoo.com</a></p>
+            </div>
+        </div>
+        <!-- #mortgage-broker -->
+        <div id="services">
+            <h3>We've Got You Covered</h3>
+            <ul>
+                <li>Mortgage loan for 1-4 units residential purchase and refinance</li>
+                <li>Qualified Mortgage (QM) or Non-Qualified Mortgage (Non-QM) loans</li>
+            </ul>
+        </div>
+    </div>
+    <!-- #content -->
+    <div id="top">
+        <a href="mortgage-agents.html#header"><span class="material-symbols-outlined">
+            keyboard_arrow_up
+        </span></a>
+        <p><a href="mortgage-agents.html#header">Go to Top</a></p>
+    </div>
+    <!-- #top -->
+    <div id="footer">
+        <div id="about">
+            <a href="index.html#header"><img src="img/logo.png" alt="Logo"></a>
+            <div id="text">
+                <p>Red Dragon Realty is a boutique residential real estate brokerage 
+                    committed to providing personalized and exceptional service. Our small,
+                    dedicated team combines local expertisie with a commitment to integrity,
+                    transparency, and innovative solutions.
+                </p>
+                <p>&copy;2023 Red Dragon Realty</p>
+            </div>
+            <!-- #text -->
+        </div>
+        <!-- #about -->
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3303.530976858627!2d-118.0546398!3d34.1071539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2da51ccc6299d%3A0xe8d7a8e4fd883a5d!2sRed%20Dragon%20Realty!5e0!3m2!1sen!2sus!4v1701462358246!5m2!1sen!2sus"></iframe>        
+        </div>
+        <!-- #map -->
+        <div id="links">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="agents.html">RE Agents</a></p>
+            <p><a href="listings.html">Listings</a></p>
+            <p><a href="mortgage-agents.html#header">Mortgage Agents</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <!-- #links -->
+        <div id="extra-info">
+            <a target="_blank" href="https://maps.app.goo.gl/mr1GCevQCEeoxqvD7">
+                <p>9908 Las Tunas Drive Suite F</p>
+                <p>Temple City, CA 91780</p>
+            </a>
+            <p>Tel: (626) 616-8428</p>
+            <!-- <p>Fax: 866-587-2688</p> -->
+            <p><a href="mailto:reddragonfinancial@yahoo.com">reddragonfinancial@yahoo.com</a></p>
+        </div>
+        <!-- #extra-info -->
+    </div>
+    <!-- #footer -->
+
+    <!-- JavaScript PlugIns -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+
+    <!-- Rellax -->
+    <script src="rellax/rellax.min.js"></script>
+
+    <script>
+        $('html').smoothScroll(1000);
+
+        var rellax = new Rellax('#parallax-container > img')
+
+    </script>
+</body>
+</html>

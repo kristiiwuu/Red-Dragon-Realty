@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listings</title>
+
+    <meta name="description" content="Discover your next home among our listings. New opportunities await every single day. If you're considering selling or buying, we are here to help!">
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- top arrow -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <style>
+        #navbar a:hover, #navbar #highlight-listings {
+            color: #C21818;
+            border-bottom: 2px solid #C21818;
+        }
+
+        #vid {
+            position: relative;
+            height: 450px;
+            width: auto;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        #vid > video {
+            height: 450px;
+            width: auto;
+        }
+
+        #vid .overlay {
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            position: absolute;
+            text-align: center;
+            top: 0px;
+        }
+
+        #vid h1 {
+            font-size: 3em;
+            margin: 0px;
+            line-height: 450px;
+            color: white;
+            text-shadow: 2px 5px 5px #777;
+        }
+
+        /* #parallax-container {
+            height: 450px;
+            width: auto;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #parallax-container img {
+            width: auto;
+            height: 500px;
+            position: absolute;
+            left: 0px;
+        } */
+
+        #CTA {
+            width: auto;
+            height: 300px;
+            display: flex;
+            margin: 0px 40px;
+        }
+
+        #CTA #text-1 h2 {
+            margin: 0px;
+        }
+        #CTA #text-1 {
+            padding: 50px 30px 30px;
+            width: 720px;
+            background-color: white;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #CTA #image {
+            width: 720px;
+            flex-grow: 1;
+            overflow: hidden; 
+            position: relative;
+            border-radius: 70px;
+        }
+
+        #CTA #image > img {
+            height: 650px;
+            position: absolute;
+            bottom: -260px;
+            right: -50px;
+        }
+
+        #listings {
+            margin-top: 50px;
+            width: auto;
+            height: auto;
+        }
+
+        #row-1, #row-2 {
+            width: auto;
+            height: 400px;
+            background-color: white;
+            display: flex;
+        }
+
+        #row-1 .box, #row-2 .box {
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        #listings .pic {
+            width: 250px;
+            height: 250px;
+            margin: 5px 0px 0px;
+            border: 2px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #listings img {
+            position: absolute;
+        }
+
+        #property-1 .pic img {
+            height: 275px;
+            width: auto;
+            left: -70px;
+            bottom: 0px;
+        }
+
+        #property-2 .pic img {
+            height: 275px;
+            width: auto;
+            left: -53px;
+            bottom: 0px;
+        }
+
+        #property-3 .pic img {
+            height: 275px;
+            width: auto;
+            left: -53px;
+            bottom: -20px;
+        }
+
+        #listings p {
+            margin: 10px 0px 0px;
+        }
+
+        #listings .address > a {
+            font-size: 1.2em;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        #listings .address a:hover {
+            color:#C21818;
+        }        
+        
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="img/logo.png" alt="Red Dragon Realty Logo">
+            <p>Red Dragon Realty</p>
+        </div>
+        <!-- #logo -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="agents.html">RE Agents</a>
+            <a href="listings.html" id="highlight-listings">Listings</a>
+            <a href="mortgage-agents.html"> Mortgage Agents</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <!-- #navbar -->
+    </div>
+    <!-- #header -->
+    <div id="content">
+        <div id="vid">
+            <video autoplay loop muted>
+                <source src="img/listings-header.mp4">
+            </video>
+            <div class="overlay">
+                <h1>Listings</h1>
+            </div> 
+        </div>
+        <!-- #vid -->
+        <!-- <div id="parallax-container">
+            <img data-rellax-speed="4" src="img/heading-2.png" alt="Red Door">
+            <div class="overlay">
+                <h1>Listings</h1>
+            </div> -->
+            <!-- #overlay -->
+        <!-- </div>  -->
+        <!-- #parallax-container -->
+        <div id="CTA">
+            <div id="text-1" class="box">
+                <h2>Find Your Home Today</h2>
+                <p>Discover the home you've always dreamed of with us. Explore our listings, tailored to your preferences 
+                    and lifestyle. Whether you're a first-time buyer, looking to upgrade, or seeking an investment opportunity, 
+                    your dream home awaits. Start your journey today - click, explore, and find the perfect home to call your 
+                    own. Find your home today!</p>
+                <div class="button">
+                    <a href="listings.html#listings">Explore Now</a>
+                </div>
+                <!-- .button -->
+            </div>
+            <!-- #text-1 -->
+            <div id="image" class="box">
+                <img src="img/listings-img.png" alt="For Sale Sign"> 
+            </div>
+            <!-- #image -->
+        </div>
+        <!-- #CTA -->
+        <div id="listings">
+            <div id="row-1">
+                <div id="property-1" class="box">
+                    <div class="pic">
+                        <img src="img/florinda.webp" alt="Florinda Home">
+                    </div>
+                    <div class="address">
+                        <a target="_blank" href="https://www.zillow.com/homes/5513-florinda-ave_rb/21611265_zpid/">
+                            <p>5513 Florinda Ave</p>
+                            <p>Arcadia, CA 91006</p>
+                        </a>
+                    </div>
+                    <p>3 beds, 2 bath, 1,228 sqft</p>
+                </div>
+                <div id="property-2" class="box">
+                    <div class="pic">
+                        <img src="img/house-example-1.jpg" alt="Foothill Home">
+                    </div>
+                    <div class="address">
+                        <a target="_blank" href="https://www.zillow.com/homedetails/905-W-Foothill-Blvd-Arcadia-CA-91006/20886330_zpid/">
+                            <p>905 W Foothill Blvd</p>
+                            <p>Arcadia, CA 91006</p>
+                        </a>
+                    </div>
+                    <p>8 beds, 10 baths, 11,163 sqft</p>
+                </div>
+                <div id="property-3" class="box">
+                    <div class="pic">
+                        <img src="img/house-example-2.webp" alt="Rancho Home">
+                    </div>
+                    <div class="address">
+                        <a target="_blank" href="https://www.zillow.com/homedetails/1026-Rancho-Rd-Arcadia-CA-91006/20887267_zpid/">
+                            <p>1026 Rancho Rd</p>
+                            <p>Arcadia, CA 91006</p>
+                        </a>
+                    </div>
+                    <p>8 beds, 10 baths, 10,038 sqft</p>
+                </div>
+            </div>
+            <!-- #row-1 -->
+            <!-- Coming Soon -->
+            <!-- <div id="row-2">
+                <div id="property-4" class="box">
+                    <div class="pic">
+                        
+                    </div>
+                    <div class="address">
+                        <p>Property Address</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div id="property-5" class="box">
+                    <div class="pic">
+                        
+                    </div>
+                    <div class="address">
+                        <p>Property Address</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div id="property-6" class="box">
+                    <div class="pic">
+                        
+                    </div>
+                    <div class="address">
+                        <p>Property Address</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- #row-2 -->
+        </div>
+    </div>
+    <!-- #content -->
+    <div id="top">
+        <a href="listings.html#header"><span class="material-symbols-outlined">
+            keyboard_arrow_up
+        </span></a>
+        <p><a href="listings.html#header">Go to Top</a></p>
+    </div>
+    <!-- #top -->
+    <div id="footer">
+        <div id="about">
+            <a href="index.html#header"><img src="img/logo.png" alt="Logo"></a>
+            <div id="text">
+                <p>Red Dragon Realty is a boutique residential real estate brokerage 
+                    committed to providing personalized and exceptional service. Our small,
+                    dedicated team combines local expertisie with a commitment to integrity,
+                    transparency, and innovative solutions.
+                </p>
+                <p>&copy;2023 Red Dragon Realty</p>
+            </div>
+            <!-- #text -->
+        </div>
+        <!-- #about -->
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3303.530976858627!2d-118.0546398!3d34.1071539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2da51ccc6299d%3A0xe8d7a8e4fd883a5d!2sRed%20Dragon%20Realty!5e0!3m2!1sen!2sus!4v1701462358246!5m2!1sen!2sus"></iframe>        
+        </div>
+        <!-- #map -->
+        <div id="links">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="agents.html">RE Agents</a></p>
+            <p><a href="listings.html#header">Listings</a></p>
+            <p><a href="mortgage-agents.html">Mortgage Agents</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <!-- #links -->
+        <div id="extra-info">
+            <a target="_blank" href="https://maps.app.goo.gl/mr1GCevQCEeoxqvD7">
+                <p>9908 Las Tunas Drive Suite F</p>
+                <p>Temple City, CA 91780</p>
+            </a>
+            <p>Tel: (626) 616-8428</p>
+            <!-- <p>Fax: 866-587-2688</p> -->
+            <p><a href="mailto:reddragonfinancial@yahoo.com">reddragonfinancial@yahoo.com</a></p>
+        </div>
+        <!-- #extra-info -->
+    </div>
+    <!-- #footer -->
+
+    <!-- JavaScript PlugIns -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+
+    <!-- Rellax -->
+	<script src="rellax/rellax.min.js"></script>
+
+    <script>
+        $('html').smoothScroll(1000);
+
+        var rellax = new Rellax('#parallax-container > img')
+    </script>
+</body>
+</html>
